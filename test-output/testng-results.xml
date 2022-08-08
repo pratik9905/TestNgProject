@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="49" started-at="2022-07-29T09:13:40Z" finished-at="2022-07-29T09:13:40Z">
+    <groups>
+      <group name="Sanity">
+        <method signature="PutInGrp.sample2()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample2" class="org.cgtestng.PutInGrp"/>
+        <method signature="PutInGrp.sample3()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample3" class="org.cgtestng.PutInGrp"/>
+        <method signature="PutInGrp.sample4()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample4" class="org.cgtestng.PutInGrp"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="PutInGrp.sample1()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample1" class="org.cgtestng.PutInGrp"/>
+        <method signature="PutInGrp.sample3()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample3" class="org.cgtestng.PutInGrp"/>
+        <method signature="PutInGrp.sample5()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample5" class="org.cgtestng.PutInGrp"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Test" duration-ms="49" started-at="2022-07-29T09:13:40Z" finished-at="2022-07-29T09:13:40Z">
+      <class name="org.cgtestng.PutInGrp">
+        <test-method status="PASS" signature="sample1()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample1" duration-ms="11" started-at="2022-07-29T14:43:40Z" finished-at="2022-07-29T14:43:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample1 -->
+        <test-method status="PASS" signature="sample2()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample2" duration-ms="1" started-at="2022-07-29T14:43:40Z" finished-at="2022-07-29T14:43:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample2 -->
+        <test-method status="FAIL" signature="sample3()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample3" duration-ms="13" started-at="2022-07-29T14:43:40Z" finished-at="2022-07-29T14:43:40Z">
+          <exception class="graphql.AssertException">
+            <message>
+              <![CDATA[condition expected to be true]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[graphql.AssertException: condition expected to be true
+	at graphql.Assert.assertTrue(Assert.java:85)
+	at org.cgtestng.PutInGrp.sample3(PutInGrp.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- graphql.AssertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample3 -->
+        <test-method status="PASS" signature="sample4()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample4" duration-ms="1" started-at="2022-07-29T14:43:40Z" finished-at="2022-07-29T14:43:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample4 -->
+        <test-method status="PASS" signature="sample5()[pri:0, instance:org.cgtestng.PutInGrp@327471b5]" name="sample5" duration-ms="1" started-at="2022-07-29T14:43:40Z" finished-at="2022-07-29T14:43:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample5 -->
+      </class> <!-- org.cgtestng.PutInGrp -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
